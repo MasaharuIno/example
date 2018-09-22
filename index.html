@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>app test</title>
+	</head>
+
+	<link rel="stylesheet" type="text/css" href="materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+		<link href="css/nprogress_bar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="your_progress.css">
+
+<body>
+	<div class="container" id="app">
+
+
+
+あなたの進捗率 : 
+<span id="r_persent">0</span>%<br>
+
+<span id="message"></span>
+
+<!--main start-->
+
+<div class="container">
+
+<div class="row">
+<div class="col m3"></div>
+ <div class="input-field col m6 s12">
+<input id="todo_line" type="text" size="40" name="todo_line" class="form-control"  class="validate" />
+ <label for="todo_line">新しいTODO</label>
+<a class="btn-floating btn-large pulse  amber accent-4 z-depth-3" id="new_todo">
+<i class="material-icons">create</i></a>
+<span class="p_id clearText">1234</span>
+
+
+</div><!--end input-field -->
+<div class="col m3"></div>
+</div><!-- end row-->
+
+<div id='add'></div>
+<!--stuck-->
+  <div class="row">
+    <div class="col m3 s12">
+		<span class="todo_name">仕事A</span><br>
+		<span id="mes_1530180318"></span>
+		<span class="del" value="1530180318"><span class="icon-bin"></span></span>
+			<span class="p_id clearText">1234</span>
+</div><!--three-->
+
+
+<div class="col m9 s12">
+
+<!-- progress bar -->
+<div class="nprogress-bar orange shine stripes">
+    <div class="bar" :style="{width: a + '%'}" style="background-color: #ff7575">{{a}}</div>
+</div>
+  <form action="#">
+    <p class="range-field">
+      <input type="range" id="test5" value="0" step="10" min="0" max="100" v-model='a'/>
+    </p>
+  </form>
+<!-- end progress bar -->
+
+<span class="id clearText">1530180318</span>
+<span class="p_id clearText">1234</span>
+</div><!--/nine-->
+</div><!--/row-->
+<!--stuck end-->
+
+
+</div><!--container-->
+
+
+
+
+  
+    </div>
+
+<script src="vue.js"></script>
+	<script type="text/javascript" src="materialize.min.js"></script>
+<script src="app.js"></script>
+<script src="your_progress.js?1733321324"></script>
+
+</body>
+</html>

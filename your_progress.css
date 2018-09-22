@@ -1,0 +1,144 @@
+*:focus {
+    outline: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+    color: #807A7A
+}
+
+#logo {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    line-height: 1.5rem !important;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container #r_persent {
+    font-size: 10rem;
+    background: linear-gradient(transparent 70%, #AE9890 70%);
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffab00;
+    color: white;
+    height: 300px;
+    z-index: 1;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#message {
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .jumbotron {
+        font-size: 4rem;
+        height: 200px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container #r_persent {
+
+        font-size: 6rem;
+        line-height: 7rem;
+        background: linear-gradient(transparent 70%, #AE9890 70%);
+    }
+    .jumbotron .container {
+        line-height: 1.5rem;
+    }
+
+    #message {
+
+        font-size: 1rem;
+    }
+}
+/* 800以下おわり */
+
+
+/*ToDoリストの名前部分*/
+
+.todo_name {
+    font-size: 2rem;
+    padding-right: 10px;
+}
+
+
+
+
+
+.row {
+
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.comp {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.comp:before {
+    content: "\2713";
+}
+
+.icon-bin {
+    margin-right: 20px;
+}
+
+
+.clearText {
+    display: none;
+}
+
+.navbar {
+    background: ##EF866B;
+}
+
+
+#dialog {
+    display: none;
+}
+
+.del {
+    cursor: pointer;
+}
+
+
+
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
